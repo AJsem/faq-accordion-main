@@ -1,0 +1,146 @@
+    /*=-------------GENERAL CSS RESET AND CO-------------=*/
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-color: hsl(275, 100%, 97%);
+      --container-color: hsl(0, 100%, 100%);
+      --text-color: hsl(292, 16%, 49%);
+      --header-color: hsl(292, 42%, 14%);
+      --button-hover-color: rgb(174, 55, 190);
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-size: 1.6rem;
+      font-family: "Work Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      background: var(--bg-color) url("../assets/images/background-pattern-mobile.svg") top/auto no-repeat scroll;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+
+    /*=--------------MAIN CONTAINER---------------=*/
+    .main-container {
+      background-color: var(--container-color);
+      margin: 15rem 2rem;
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 38rem;
+    }
+
+    /*---Header styling---*/
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .faqs-flex {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .faqs-flex img {
+      width: 2rem;
+    }
+
+    /*=--------------MAIN BODY STYLING-------------=*/
+    .all-quest-div {
+      border-bottom: .1rem solid var(--bg-color);
+      padding: 1.5rem 0;
+    }
+
+    .all-quest-div p {
+      display: none;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--text-color);
+      line-height: 1.6;
+      margin-top: 2rem;
+    }
+
+    .quest-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    /*Button Styling*/
+    .quest-flex a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: var(--header-color);
+      width: 80%;
+    }
+
+    .quest-flex a:hover {
+      cursor: pointer;
+      color: var(--button-hover-color);
+
+    }
+
+
+    /*Image Styling*/
+    .img-container {
+      justify-self: flex-end;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .img-container img {
+      width: 2.5rem;
+    }
+
+
+    /*Other display Styling*/
+    .all-quest-div .minus-icon {
+      display: none;
+    }
+
+
+    /*---------FIRST DROPDOWN-------------*/
+    .quest-div1 p {
+      display: block;
+    }
+
+    .quest-div1 .minus-icon {
+      display: block;
+    }
+
+    .quest-div1 .plus-icon {
+      display: none;
+    }
+
+    
+
+    /*=---------------RESPONSIVE DESIGN-------------=*/
+    @media (min-width: 768px) {
+      body {
+        background: var(--bg-color) url("../assets/images/background-pattern-desktop.svg") top/auto no-repeat scroll;
+      }
+
+      .main-container {
+        max-width: 500px;
+      }
+    }
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
