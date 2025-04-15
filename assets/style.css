@@ -28,14 +28,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      min-height: 44rem;
     }
 
 
     /*=--------------MAIN CONTAINER---------------=*/
     .main-container {
       background-color: var(--container-color);
-      margin: 15rem 2rem;
+      margin: 15rem 2rem 2rem;
       padding: 2rem;
       border-radius: 1rem;
       max-width: 38rem;
